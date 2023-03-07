@@ -1,0 +1,16 @@
+function onLoad() {
+    //Type appropriate comment here, and begin script below
+    alert('working on catlog client script');
+    var pri = g_form.getValue('priority');
+    alert('priority is :' + pri);
+    g_form.setValue('additional_details', 'test data');
+    //alert(g_user.userName);
+    //alert(g_user.userID);	
+    var a = g_form.getValue('additional_service');
+    if (a == true) {
+        g_form.setMandatory('additional_details', true);
+    } else {
+        g_form.setMandatory('additional_service', true);
+    }
+
+}
