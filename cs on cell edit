@@ -1,0 +1,8 @@
+function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+    var saveAndClose = true;
+    //Type appropriate comment here, and begin script below
+    alert('sysid of updated records for following table : ' + table + ' sysid =' + sysIDs);
+    alert(oldValues);
+    alert(newValue);
+    callback(saveAndClose);
+        }
